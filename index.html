@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- ============================================================
+       META TAGS ESSENCIAIS
+       ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO — Título e descrição -->
+    <title>AMR — Agência Municipal de Regulação de Ariquemes</title>
+    <meta name="description"
+        content="Site oficial da Agência Municipal de Regulação de Ariquemes (AMR). Autarquia responsável pela regulação, controle e fiscalização dos serviços públicos delegados no município de Ariquemes, Rondônia.">
+    <meta name="keywords"
+        content="AMR, Agência Municipal de Regulação, Ariquemes, Rondônia, regulação, fiscalização, serviços públicos, água, esgoto, transporte, autarquia, governo municipal">
+    <meta name="author" content="Agência Municipal de Regulação de Ariquemes">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="BR-RO">
+    <meta name="geo.placename" content="Ariquemes">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://amr.ariquemes.ro.gov.br/">
+
+    <!-- Open Graph (compartilhamento em redes sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AMR — Agência Municipal de Regulação de Ariquemes">
+    <meta property="og:description"
+        content="Autarquia responsável pela regulação, controle e fiscalização dos serviços públicos delegados no município de Ariquemes - RO.">
+    <meta property="og:url" content="https://amr.ariquemes.ro.gov.br/">
+    <meta property="og:image" content="https://amr.ariquemes.ro.gov.br/images/logotipo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="AMR Ariquemes">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AMR — Agência Municipal de Regulação de Ariquemes">
+    <meta name="twitter:description"
+        content="Autarquia responsável pela regulação, controle e fiscalização dos serviços públicos delegados no município de Ariquemes - RO.">
+    <meta name="twitter:image" content="https://amr.ariquemes.ro.gov.br/images/logotipo.png">
+
+    <!-- ============================================================
+       SCHEMA.ORG — DADOS ESTRUTURADOS (JSON-LD)
+       ============================================================ -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GovernmentOrganization",
+    "name": "Agência Municipal de Regulação de Ariquemes",
+    "alternateName": "AMR",
+    "url": "https://amr.ariquemes.ro.gov.br",
+    "logo": "https://amr.ariquemes.ro.gov.br/images/logotipo.png",
+    "description": "Autarquia especial responsável pela regulação, controle e fiscalização dos serviços públicos delegados no município de Ariquemes, Rondônia.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Tancredo Neves, nº 2166, Setor Institucional",
+      "addressLocality": "Ariquemes",
+      "addressRegion": "RO",
+      "postalCode": "76870-000",
+      "addressCountry": "BR"
+    },
+    "telephone": "(69) 3536-2244",
+    "email": "amr.ouvidoria@ariquemes.ro.gov.br",
+    "openingHours": "Mo-Fr 07:30-13:30",
+    "areaServed": {
+      "@type": "City",
+      "name": "Ariquemes",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Rondônia"
+      }
+    },
+    "memberOf": {
+      "@type": "GovernmentOrganization",
+      "name": "Prefeitura Municipal de Ariquemes"
+    }
+  }
+  </script>
+
+    <!-- ============================================================
+       CSS — BIBLIOTECAS EXTERNAS (CDN)
+       ============================================================ -->
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- CSS do site -->
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logotipo.png">
+
+    <!--
+    ============================================================
+    SITEMAP.XML (simulado — criar arquivo separado em produção)
+    ============================================================
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemapschemas.org/sitemap/0.9">
+      <url>
+        <loc>https://amr.ariquemes.ro.gov.br/</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+      </url>
+    </urlset>
+  -->
+</head>
+
+<body>
+    <!-- ============================================================
+       ARIA LIVE REGION (leitores de tela)
+       ============================================================ -->
+    <div id="aria-live-region" class="visually-hidden" aria-live="polite" aria-atomic="true" role="status"></div>
+
+    <!-- ============================================================
+       SKIP TO CONTENT (acessibilidade)
+       ============================================================ -->
+    <a href="#conteudo-principal" class="skip-to-content" aria-label="Pular para o conteúdo principal">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- ============================================================
+       HEADER — TOPO DO SITE
+       ============================================================ -->
+    <header role="banner">
+
+        <!-- Barra superior (acessibilidade + informações + transparência) -->
+        <div class="header-top" aria-label="Barra de acessibilidade e informações">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Coluna esquerda: link prefeitura -->
+                    <div class="col-lg-4 col-md-12 text-center text-lg-start mb-1 mb-lg-0">
+                        <small>
+                            <a href="https://ariquemes.ro.gov.br" target="_blank" rel="noopener noreferrer"
+                                aria-label="Acessar site da Prefeitura de Ariquemes (abre em nova janela)">
+                                <i class="fas fa-university me-1" aria-hidden="true"></i>
+                                Portal Municipal — Prefeitura Municipal de Ariquemes/RO
+                            </a>
+                        </small>
+                    </div>
+                    <!-- Coluna centro: botão transparência -->
+                    <div class="col-lg-4 col-md-12 text-center mb-1 mb-lg-0">
+                        <a href="https://transparencia.ariquemes.ro.gov.br/transparencia/index.php?tipoentidade=AMR"
+                            class="btn-transparencia-topo" target="_blank" rel="noopener noreferrer"
+                            aria-label="Acessar o Portal da Transparência (abre em nova janela)">
+                            <i class="fas fa-landmark me-1" aria-hidden="true"></i>Portal da Transparência
+                        </a>
+                    </div>
+                    <!-- Coluna direita: botões acessibilidade -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end gap-2 acessibilidade-btns flex-wrap"
+                            role="toolbar" aria-label="Ferramentas de acessibilidade">
+                            <button type="button" class="btn btn-sm" id="btn-diminuir-fonte"
+                                aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">
+                                <i class="fas fa-minus" aria-hidden="true"></i> <span
+                                    class="d-none d-lg-inline">A-</span>
+                            </button>
+                            <button type="button" class="btn btn-sm" id="btn-aumentar-fonte"
+                                aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">
+                                <i class="fas fa-plus" aria-hidden="true"></i> <span
+                                    class="d-none d-lg-inline">A+</span>
+                            </button>
+                            <button type="button" class="btn btn-sm" id="btn-reset-fonte"
+                                aria-label="Restaurar tamanho padrão da fonte" title="Restaurar padrão">
+                                <i class="fas fa-undo" aria-hidden="true"></i> <span
+                                    class="d-none d-lg-inline">Reset</span>
+                            </button>
+                            <button type="button" class="btn btn-sm" id="btn-alto-contraste"
+                                aria-label="Alternar modo alto contraste" aria-pressed="false" title="Alto contraste">
+                                <i class="fas fa-adjust" aria-hidden="true"></i>
+                                <span class="btn-text d-none d-lg-inline">Alto Contraste</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar principal -->
+        <nav class="navbar navbar-expand-lg sticky-top" aria-label="Navegação principal">
+            <div class="container">
+                <!-- Logotipo e nome -->
+                <a class="navbar-brand" href="#inicio" aria-label="AMR — Página inicial">
+                    <img src="images/logotipo.png" alt="Logotipo da Agência Municipal de Regulação de Ariquemes"
+                        width="50" height="50">
+                    <div class="brand-text">
+                        <span class="brand-name">Agência Municipal de Regulação</span>
+                        <span class="brand-subtitle">Ariquemes — Rondônia</span>
+                    </div>
+                </a>
+
+                <!-- Toggler mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a class="nav-link active" href="#inicio" role="menuitem" aria-current="true">Início</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="#sobre" role="menuitem">Sobre</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="#oque-fazemos" role="menuitem">O que Fazemos</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="#servicos" role="menuitem">Serviços Regulados</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="#contato" role="menuitem">Contato</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="#acessibilidade" role="menuitem">Acessibilidade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================================
+       CONTEÚDO PRINCIPAL
+       ============================================================ -->
+    <main id="conteudo-principal" role="main">
+
+        <!-- ========================================================
+         SEÇÃO 1 — HERO
+         ======================================================== -->
+        <section id="inicio" class="hero-section" aria-label="Seção de destaque institucional">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1>Agência Municipal de Regulação de Ariquemes</h1>
+                        <p class="lead">
+                            Regulando com transparência e eficiência os serviços públicos delegados, garantindo
+                            qualidade,
+                            modicidade tarifária e respeito aos direitos dos cidadãos de Ariquemes.
+                        </p>
+                        <a href="#sobre" class="btn-hero" aria-label="Saiba mais sobre a AMR">
+                            <i class="fas fa-arrow-right me-2" aria-hidden="true"></i>Conheça a AMR
+                        </a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="images/blank.png"
+                            alt="Ilustração representando a Agência Municipal de Regulação de Ariquemes"
+                            class="hero-img" width="600" height="350" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 2 — SOBRE A AMR
+         ======================================================== -->
+        <section id="sobre" aria-labelledby="titulo-sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto fade-in">
+                        <h2 id="titulo-sobre" class="section-title">Sobre a AMR</h2>
+                        <p class="section-subtitle">Conheça a nossa história, missão e atuação institucional.</p>
+
+                        <div class="sobre-texto">
+                            <h3>Agência Municipal de Regulação de Ariquemes</h3>
+                            <p>
+                                A Agência Municipal de Regulação de Ariquemes (AMR) é uma autarquia especial, dotada de
+                                autonomia
+                                decisória, administrativa e financeira. Nossa missão fundamental é regular, controlar e
+                                fiscalizar
+                                os serviços públicos delegados pelo Município de Ariquemes, garantindo que sejam
+                                prestados com
+                                eficiência, modicidade tarifária e qualidade para todos os cidadãos.
+                            </p>
+                            <p>
+                                Em 2025, a AMR consolidou sua gestão através de um planejamento estratégico focado em
+                                resultados. A agência opera com uma estrutura técnica qualificada, composta por
+                                conselhos e
+                                diretorias que asseguram que cada decisão tomada siga rigorosos critérios técnicos e
+                                legais.
+                            </p>
+                        </div>
+
+                        <div class="sobre-destaque" role="complementary" aria-label="Missão institucional">
+                            <h3><i class="fas fa-bullseye me-2" aria-hidden="true"></i>Nossa Missão</h3>
+                            <p>
+                                Atuar com independência técnica, transparência e compromisso social na regulação dos
+                                serviços
+                                públicos, promovendo o equilíbrio entre prestadores e usuários, sempre em defesa do
+                                interesse público.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 2.5 — EQUIPE
+         ======================================================== -->
+        <section id="equipe" aria-labelledby="titulo-equipe">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 id="titulo-equipe" class="section-title">Nossa Equipe</h2>
+                    <p class="section-subtitle mx-auto">
+                        Conheça os profissionais que atuam na Agência Municipal de Regulação de Ariquemes.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-2 justify-content-center">
+                    <!-- Diretor -->
+                    <div class="col-6 col-md-4 col-lg fade-in">
+                        <article class="card-equipe text-center">
+                            <div class="equipe-img-wrapper">
+                                <img src="images/blank.png" alt="Foto do Diretor da AMR" class="equipe-img" width="160"
+                                    height="160" loading="lazy">
+                            </div>
+                            <div class="equipe-info">
+                                <h3 class="equipe-nome">Diretor(a)</h3>
+                                <p class="equipe-cargo">Direção Geral</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Procurador -->
+                    <div class="col-6 col-md-4 col-lg fade-in">
+                        <article class="card-equipe text-center">
+                            <div class="equipe-img-wrapper">
+                                <img src="images/blank.png" alt="Foto do Procurador da AMR" class="equipe-img"
+                                    width="160" height="160" loading="lazy">
+                            </div>
+                            <div class="equipe-info">
+                                <h3 class="equipe-nome">Procurador(a)</h3>
+                                <p class="equipe-cargo">Procuradoria Jurídica</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Secretário -->
+                    <div class="col-6 col-md-4 col-lg fade-in">
+                        <article class="card-equipe text-center">
+                            <div class="equipe-img-wrapper">
+                                <img src="images/blank.png" alt="Foto do Secretário da AMR" class="equipe-img"
+                                    width="160" height="160" loading="lazy">
+                            </div>
+                            <div class="equipe-info">
+                                <h3 class="equipe-nome">Secretário(a)</h3>
+                                <p class="equipe-cargo">Secretaria Administrativa</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Administrativo -->
+                    <div class="col-6 col-md-4 col-lg fade-in">
+                        <article class="card-equipe text-center">
+                            <div class="equipe-img-wrapper">
+                                <img src="images/blank.png" alt="Foto do Agente Administrativo da AMR"
+                                    class="equipe-img" width="160" height="160" loading="lazy">
+                            </div>
+                            <div class="equipe-info">
+                                <h3 class="equipe-nome">Administrativo(a)</h3>
+                                <p class="equipe-cargo">Apoio Administrativo</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Fiscal -->
+                    <div class="col-6 col-md-4 col-lg fade-in">
+                        <article class="card-equipe text-center">
+                            <div class="equipe-img-wrapper">
+                                <img src="images/blank.png" alt="Foto do Fiscal da AMR" class="equipe-img" width="160"
+                                    height="160" loading="lazy">
+                            </div>
+                            <div class="equipe-info">
+                                <h3 class="equipe-nome">Fiscal</h3>
+                                <p class="equipe-cargo">Fiscalização Técnica</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 3 — O QUE FAZEMOS
+         ======================================================== -->
+        <section id="oque-fazemos" aria-labelledby="titulo-fazemos">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 id="titulo-fazemos" class="section-title">O que Fazemos</h2>
+                    <p class="section-subtitle mx-auto">
+                        Conheça as principais áreas de atuação da Agência Municipal de Regulação.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <!-- Card 1 — Fiscalização Técnica -->
+                    <div class="col-md-4 fade-in">
+                        <article class="card-custom" aria-label="Fiscalização Técnica">
+                            <div class="card-body">
+                                <div class="icon-box" aria-hidden="true">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3 class="card-title">Fiscalização Técnica</h3>
+                                <p class="card-text">
+                                    Realizamos inspeções e auditorias técnicas periódicas nos serviços públicos
+                                    delegados,
+                                    assegurando o cumprimento dos padrões de qualidade, segurança e eficiência
+                                    estabelecidos
+                                    nos contratos e na legislação vigente.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 2 — Regulação Tarifária -->
+                    <div class="col-md-4 fade-in">
+                        <article class="card-custom" aria-label="Regulação Tarifária">
+                            <div class="card-body">
+                                <div class="icon-box" aria-hidden="true">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="card-title">Regulação Tarifária</h3>
+                                <p class="card-text">
+                                    Analisamos e definimos as tarifas dos serviços regulados com base em estudos
+                                    técnicos,
+                                    garantindo modicidade para os usuários e sustentabilidade econômico-financeira para
+                                    os prestadores de serviço.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3 — Mediação de Conflitos -->
+                    <div class="col-md-4 fade-in">
+                        <article class="card-custom" aria-label="Mediação de Conflitos">
+                            <div class="card-body">
+                                <div class="icon-box" aria-hidden="true">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3 class="card-title">Mediação de Conflitos</h3>
+                                <p class="card-text">
+                                    Atuamos como mediadores entre prestadores de serviço e usuários, promovendo o
+                                    diálogo
+                                    e a resolução pacífica de conflitos, protegendo os direitos dos cidadãos e
+                                    garantindo
+                                    a continuidade dos serviços essenciais.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 4 — SERVIÇOS REGULADOS
+         ======================================================== -->
+        <section id="servicos" aria-labelledby="titulo-servicos">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 id="titulo-servicos" class="section-title">Serviços Regulados</h2>
+                    <p class="section-subtitle mx-auto">
+                        A AMR regula e fiscaliza os seguintes serviços públicos delegados no município de Ariquemes.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-2 justify-content-center">
+                    <!-- Card — Água e Esgoto -->
+                    <div class="col-md-6 col-lg-5 fade-in">
+                        <article class="card-custom card-servico" aria-label="Serviço de Água e Esgoto">
+                            <img src="images/blank.png" class="card-img-top"
+                                alt="Representação do serviço de abastecimento de água e esgotamento sanitário"
+                                width="500" height="180" loading="lazy">
+                            <div class="card-body">
+                                <div class="icon-box" aria-hidden="true">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <h3 class="card-title">Água e Esgoto</h3>
+                                <p class="card-text">
+                                    Regulação e fiscalização dos serviços de abastecimento de água tratada e esgotamento
+                                    sanitário,
+                                    assegurando universalização do acesso, qualidade da água distribuída, tratamento
+                                    adequado dos
+                                    efluentes e tarifas justas para a população.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card — Transporte Público Individual -->
+                    <div class="col-md-6 col-lg-5 fade-in">
+                        <article class="card-custom card-servico" aria-label="Serviço de Transporte Público Individual">
+                            <img src="images/blank.png" class="card-img-top"
+                                alt="Representação do serviço de transporte público individual por táxi e mototáxi"
+                                width="500" height="180" loading="lazy">
+                            <div class="card-body">
+                                <div class="icon-box" aria-hidden="true">
+                                    <i class="fas fa-taxi"></i>
+                                </div>
+                                <h3 class="card-title">Transporte Público Individual (Táxi e Mototáxi)</h3>
+                                <p class="card-text">
+                                    Regulação e fiscalização do transporte público individual de passageiros, incluindo
+                                    serviços
+                                    de táxi e mototáxi, garantindo segurança dos usuários, qualidade dos veículos,
+                                    adequação
+                                    tarifária e cumprimento das normas municipais.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 4.5 — GALERIA DE SERVIÇOS
+         ======================================================== -->
+        <section id="galeria" aria-labelledby="titulo-galeria">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 id="titulo-galeria" class="section-title">Galeria</h2>
+                    <p class="section-subtitle mx-auto">
+                        Registros das ações de fiscalização e regulação realizadas pela AMR.
+                    </p>
+                </div>
+
+                <div class="row g-3 mt-2">
+                    <div class="col-6 col-md-3 fade-in">
+                        <figure class="galeria-item">
+                            <img src="images/blank.png" alt="Registro de atividade de fiscalização da AMR"
+                                class="galeria-img" width="400" height="300" loading="lazy">
+                            <figcaption class="galeria-caption">Fiscalização em campo</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-3 fade-in">
+                        <figure class="galeria-item">
+                            <img src="images/blank.png" alt="Registro de vistoria técnica da AMR" class="galeria-img"
+                                width="400" height="300" loading="lazy">
+                            <figcaption class="galeria-caption">Vistoria técnica</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-3 fade-in">
+                        <figure class="galeria-item">
+                            <img src="images/blank.png" alt="Registro de reunião institucional da AMR"
+                                class="galeria-img" width="400" height="300" loading="lazy">
+                            <figcaption class="galeria-caption">Reunião institucional</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-3 fade-in">
+                        <figure class="galeria-item">
+                            <img src="images/blank.png" alt="Registro de ação comunitária da AMR" class="galeria-img"
+                                width="400" height="300" loading="lazy">
+                            <figcaption class="galeria-caption">Ação comunitária</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         BANNER — PORTAL DA TRANSPARÊNCIA (destaque)
+         ======================================================== -->
+        <section id="portal-transparencia" class="transparencia-banner" aria-label="Acesso ao Portal da Transparência">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8 text-center fade-in">
+                        <div class="transparencia-banner-content">
+                            <div class="transparencia-banner-icon" aria-hidden="true">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h2>Portal da Transparência</h2>
+                            <p>
+                                Acesse o Portal da Transparência da AMR para consultar informações sobre receitas,
+                                despesas,
+                                contratos, licitações, servidores e demais dados públicos, em conformidade com a
+                                Lei de Acesso à Informação (Lei nº 12.527/2011).
+                            </p>
+                            <a href="https://transparencia.ariquemes.ro.gov.br/transparencia/index.php?tipoentidade=AMR"
+                                class="btn-transparencia" target="_blank" rel="noopener noreferrer"
+                                aria-label="Acessar o Portal da Transparência da AMR (abre em nova janela)">
+                                <i class="fas fa-external-link-alt me-2" aria-hidden="true"></i>Acessar Portal da
+                                Transparência
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 5 — TRANSPARÊNCIA E GESTÃO
+         ======================================================== -->
+        <section id="transparencia" aria-labelledby="titulo-transparencia">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto fade-in">
+                        <h2 id="titulo-transparencia" class="section-title">Transparência e Gestão</h2>
+                        <p class="section-subtitle">
+                            Em atendimento à Lei de Acesso à Informação (Lei nº 12.527/2011), disponibilizamos
+                            informações
+                            institucionais de forma clara e acessível.
+                        </p>
+                        <!-- Finalidade Institucional -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                            <div>
+                                <h4>Finalidade Institucional</h4>
+                                <p>
+                                    A AMR tem como finalidade regular, controlar e fiscalizar os serviços públicos
+                                    delegados
+                                    pelo município de Ariquemes, zelando pelo interesse público, pela qualidade dos
+                                    serviços
+                                    e pela modicidade das tarifas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Estrutura Organizacional -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
+                            <div>
+                                <h4>Estrutura Organizacional</h4>
+                                <p>
+                                    A Agência é composta por: Presidência, Diretoria de Regulação, Diretoria
+                                    Administrativa
+                                    e Financeira, Ouvidoria e corpo técnico especializado, garantindo autonomia e
+                                    eficiência
+                                    na execução de suas atribuições.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Governança e Planejamento -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-chess-rook" aria-hidden="true"></i>
+                            <div>
+                                <h4>Governança e Planejamento Estratégico</h4>
+                                <p>
+                                    A AMR adota princípios de governança pública, com planejamento estratégico baseado
+                                    em
+                                    decisões técnicas fundamentadas, transparência nos processos regulatórios e
+                                    participação
+                                    social nas deliberações que afetam os serviços públicos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Horário de Funcionamento -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta-feira, das 07h30 às 13h30.</p>
+                            </div>
+                        </div>
+
+                        <!-- Endereço -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Av. Tancredo Neves, nº 2166, Setor Institucional, Ariquemes — RO.</p>
+                            </div>
+                        </div>
+
+                        <!-- Canais de Contato -->
+                        <div class="info-item fade-in">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <div>
+                                <h4>Canais Oficiais de Contato</h4>
+                                <p>
+                                    Telefone/Ouvidoria: <strong>(69) 3536-2244</strong><br>
+                                    E-mail: <a
+                                        href="mailto:amr.ouvidoria@ariquemes.ro.gov.br">amr.ouvidoria@ariquemes.ro.gov.br</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 6 — CONTATO / OUVIDORIA
+         ======================================================== -->
+        <section id="contato" aria-labelledby="titulo-contato">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 id="titulo-contato" class="section-title">Contato e Ouvidoria</h2>
+                    <p class="section-subtitle mx-auto">
+                        Entre em contato com a Agência Municipal de Regulação de Ariquemes pelos canais abaixo.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <!-- Endereço -->
+                    <div class="col-md-6 fade-in">
+                        <div class="contato-card" role="group" aria-label="Endereço">
+                            <div class="contato-icon" aria-hidden="true">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Endereço</h3>
+                            <p>Av. Tancredo Neves, nº 2166, Setor Institucional, Ariquemes — RO</p>
+                        </div>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="col-md-6 fade-in">
+                        <div class="contato-card" role="group" aria-label="Telefone e Ouvidoria">
+                            <div class="contato-icon" aria-hidden="true">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Telefone / Ouvidoria</h3>
+                            <p>
+                                <a href="tel:+556935362244" aria-label="Ligar para (69) 3536-2244">(69) 3536-2244</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- E-mails -->
+                    <div class="col-md-6 fade-in">
+                        <div class="contato-card" role="group" aria-label="E-mails institucionais">
+                            <div class="contato-icon" aria-hidden="true">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>E-mails</h3>
+                            <p>
+                                <a href="mailto:amr.ouvidoria@ariquemes.ro.gov.br"
+                                    aria-label="Enviar e-mail para ouvidoria">amr.ouvidoria@ariquemes.ro.gov.br</a><br>
+                                <a href="mailto:amr.presidencia@ariquemes.ro.gov.br"
+                                    aria-label="Enviar e-mail para presidência">amr.presidencia@ariquemes.ro.gov.br</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Horário -->
+                    <div class="col-md-6 fade-in">
+                        <div class="contato-card" role="group" aria-label="Horário de atendimento">
+                            <div class="contato-icon" aria-hidden="true">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta-feira,<br>das 07h30 às 13h30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aviso LGPD -->
+                <div class="row mt-4 fade-in">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="lgpd-notice" role="note" aria-label="Aviso de privacidade e LGPD">
+                            <p>
+                                <i class="fas fa-shield-alt me-2" aria-hidden="true"></i>
+                                <strong>Aviso de Privacidade (LGPD):</strong>
+                                Este site não realiza coleta, armazenamento ou tratamento de dados pessoais dos
+                                visitantes,
+                                em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). As
+                                informações
+                                de contato exibidas são de natureza institucional e pública.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+         SEÇÃO 7 — ACESSIBILIDADE
+         ======================================================== -->
+        <section id="acessibilidade" aria-labelledby="titulo-acessibilidade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="fade-in">
+                            <h2 id="titulo-acessibilidade" class="section-title">Acessibilidade</h2>
+                            <p class="section-subtitle">
+                                A AMR está comprometida com a inclusão digital, garantindo que todas as pessoas possam
+                                acessar as informações deste portal.
+                            </p>
+                        </div>
+
+                        <!-- Recursos de acessibilidade -->
+                        <div class="recurso-item fade-in">
+                            <i class="fas fa-text-height" aria-hidden="true"></i>
+                            <div>
+                                <h4>Ajuste de Tamanho da Fonte</h4>
+                                <p>
+                                    Utilize os botões A+ e A- na barra superior para aumentar ou diminuir o tamanho do
+                                    texto conforme sua necessidade.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item fade-in">
+                            <i class="fas fa-adjust" aria-hidden="true"></i>
+                            <div>
+                                <h4>Modo Alto Contraste</h4>
+                                <p>
+                                    Ative o modo alto contraste para melhorar a legibilidade do conteúdo, especialmente
+                                    útil para pessoas com baixa visão.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item fade-in">
+                            <i class="fas fa-keyboard" aria-hidden="true"></i>
+                            <div>
+                                <h4>Navegação por Teclado</h4>
+                                <p>
+                                    Todo o site pode ser navegado utilizando apenas o teclado. Utilize a tecla Tab para
+                                    avançar entre os elementos e Enter para ativá-los. Atalhos: Alt+1 (conteúdo
+                                    principal),
+                                    Alt+2 (navegação), Alt+3 (contato).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item fade-in">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                            <div>
+                                <h4>Compatibilidade com Leitores de Tela</h4>
+                                <p>
+                                    O site utiliza marcação semântica HTML5, atributos ARIA e textos alternativos em
+                                    todas
+                                    as imagens, garantindo compatibilidade com tecnologias assistivas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Botões de acessibilidade -->
+                        <div class="d-flex flex-wrap gap-3 mt-4 fade-in">
+                            <button type="button" class="btn-acessibilidade" id="btn-fonte-acessibilidade"
+                                onclick="document.getElementById('btn-aumentar-fonte').click()"
+                                aria-label="Aumentar tamanho da fonte">
+                                <i class="fas fa-search-plus me-2" aria-hidden="true"></i>Aumentar Fonte
+                            </button>
+                            <button type="button" class="btn-acessibilidade" id="btn-fonte-diminuir-acessibilidade"
+                                onclick="document.getElementById('btn-diminuir-fonte').click()"
+                                aria-label="Diminuir tamanho da fonte">
+                                <i class="fas fa-search-minus me-2" aria-hidden="true"></i>Diminuir Fonte
+                            </button>
+                            <button type="button" class="btn-acessibilidade" id="btn-reset-acessibilidade"
+                                onclick="document.getElementById('btn-reset-fonte').click()"
+                                aria-label="Restaurar configurações padrão de acessibilidade">
+                                <i class="fas fa-undo me-2" aria-hidden="true"></i>Restaurar Padrão
+                            </button>
+                            <button type="button" class="btn-acessibilidade" id="btn-contraste-secao"
+                                aria-label="Alternar modo alto contraste" aria-pressed="false">
+                                <i class="fas fa-adjust me-2" aria-hidden="true"></i>Ativar Alto Contraste
+                            </button>
+                        </div>
+
+                        <!-- Declaração de compromisso -->
+                        <div class="lgpd-notice mt-4 fade-in" role="note"
+                            aria-label="Declaração de compromisso com acessibilidade">
+                            <p>
+                                <i class="fas fa-heart me-2" aria-hidden="true"></i>
+                                <strong>Compromisso com a Inclusão Digital:</strong>
+                                A Agência Municipal de Regulação de Ariquemes trabalha continuamente para que este
+                                portal
+                                atenda aos padrões de acessibilidade digital estabelecidos pelas Diretrizes de
+                                Acessibilidade
+                                para Conteúdo Web (WCAG 2.1), nos níveis AA e AAA, promovendo o acesso universal à
+                                informação
+                                pública.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Coluna 1 — Sobre -->
+                <div class="col-lg-4">
+                    <h5>Agência Municipal de Regulação</h5>
+                    <p class="mb-3" style="font-size: 0.9rem;">
+                        Autarquia especial do Município de Ariquemes, Rondônia, responsável pela regulação, controle e
+                        fiscalização dos serviços públicos delegados.
+                    </p>
+                    <p style="font-size: 0.85rem; opacity: 0.7;">
+                        <i class="fas fa-map-marker-alt me-1" aria-hidden="true"></i>
+                        Ariquemes — Rondônia, Brasil
+                    </p>
+                </div>
+
+                <!-- Coluna 2 — Links Rápidos -->
+                <div class="col-lg-4">
+                    <h5>Navegação</h5>
+                    <nav aria-label="Links rápidos do rodapé">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#inicio"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Início</a></li>
+                            <li class="mb-2"><a href="#sobre"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Sobre a AMR</a></li>
+                            <li class="mb-2"><a href="#oque-fazemos"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>O que Fazemos</a></li>
+                            <li class="mb-2"><a href="#servicos"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Serviços Regulados</a></li>
+                            <li class="mb-2"><a href="#transparencia"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Transparência</a></li>
+                            <li class="mb-2"><a href="#contato"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Contato</a></li>
+                            <li class="mb-2"><a href="#acessibilidade"><i class="fas fa-chevron-right me-1"
+                                        aria-hidden="true"></i>Acessibilidade</a></li>
+                            <li class="mb-2">
+                                <a href="https://transparencia.ariquemes.ro.gov.br/transparencia/index.php?tipoentidade=AMR"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>Portal da
+                                    Transparência
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Coluna 3 — Contato -->
+                <div class="col-lg-4">
+                    <h5>Contato</h5>
+                    <div class="footer-contato">
+                        <p>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            Av. Tancredo Neves, nº 2166, Setor Institucional, Ariquemes — RO
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <a href="tel:+556935362244">(69) 3536-2244</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:amr.ouvidoria@ariquemes.ro.gov.br">amr.ouvidoria@ariquemes.ro.gov.br</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Seg. a Sex., 07h30 às 13h30
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Rodapé inferior -->
+            <div class="row">
+                <div class="col-12 text-center footer-bottom">
+                    <p class="mb-1">
+                        &copy; <span id="ano-atual">2026</span> Agência Municipal de Regulação de Ariquemes (AMR).
+                        Todos os direitos reservados.
+                    </p>
+                    <p class="mb-0">
+                        Município de Ariquemes — Estado de Rondônia, Brasil.
+                    </p>
+                    <p class="mb-0">
+                        Desenvolvido por <a href="https://www.maisdigitalbr.com" target="_blank" rel="noopener noreferrer">Mais digital</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+       BOTÃO VOLTAR AO TOPO
+       ============================================================ -->
+    <button type="button" id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo da página"
+        title="Voltar ao topo">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- ============================================================
+       SCRIPTS — BIBLIOTECAS EXTERNAS (CDN)
+       ============================================================ -->
+    <!-- jQuery 3.7 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript do site -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
