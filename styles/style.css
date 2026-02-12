@@ -833,6 +833,116 @@ section:nth-child(even) {
 }
 
 /* -----------------------------------------------
+   9.9. SEÇÃO NOTÍCIAS
+   ----------------------------------------------- */
+.card-noticia {
+  background: var(--cor-branca);
+  border-radius: var(--borda-raio);
+  box-shadow: var(--sombra-card);
+  overflow: hidden;
+  transition: transform var(--transicao), box-shadow var(--transicao);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-noticia:hover,
+.card-noticia:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-card-hover);
+}
+
+.noticia-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.noticia-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transicao);
+}
+
+.card-noticia:hover .noticia-img {
+  transform: scale(1.05);
+}
+
+.noticia-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.noticia-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-preta);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.noticia-fonte {
+  font-size: 0.8rem;
+  color: var(--cor-cinza-texto);
+  margin-bottom: 1rem;
+}
+
+.btn-saiba-mais {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--cor-primaria);
+  border-radius: var(--borda-raio);
+  transition: all var(--transicao);
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.btn-saiba-mais:hover,
+.btn-saiba-mais:focus {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  text-decoration: none;
+}
+
+/* Alto contraste — Notícias */
+body.alto-contraste .card-noticia {
+  background-color: #1a1a1a !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.alto-contraste .noticia-titulo {
+  color: #ffff00 !important;
+}
+
+body.alto-contraste .noticia-fonte {
+  color: #cccccc !important;
+}
+
+body.alto-contraste .btn-saiba-mais {
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+body.alto-contraste .btn-saiba-mais:hover,
+body.alto-contraste .btn-saiba-mais:focus {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}
+
+/* -----------------------------------------------
    9.5. BANNER PORTAL DA TRANSPARÊNCIA
    ----------------------------------------------- */
 .transparencia-banner {
