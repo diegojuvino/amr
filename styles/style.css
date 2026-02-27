@@ -1515,16 +1515,32 @@ footer .footer-bottom {
 
 /* Mobile pequeno (até 480px) */
 @media (max-width: 480px) {
+  .navbar {
+    padding: 0.35rem 0;
+  }
+
+  .navbar-brand {
+    gap: 0.4rem;
+  }
+
   .hero-section h1 {
     font-size: 1.4rem;
   }
 
   .navbar-brand .brand-name {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+  }
+
+  .navbar-brand .brand-subtitle {
+    font-size: 0.55rem;
   }
 
   .navbar-brand img {
-    height: 36px;
+    height: 32px;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
   }
 
   .icon-box {
