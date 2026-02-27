@@ -518,7 +518,7 @@ textarea:focus-visible {
 
 .navbar-brand img {
   height: 50px;
-  width: auto;
+  width: max-content;
 }
 
 .navbar-brand .brand-text {
@@ -1525,6 +1525,7 @@ footer .footer-bottom {
 
   .navbar-brand img {
     height: 36px;
+    width: max-content;
   }
 
   .icon-box {
